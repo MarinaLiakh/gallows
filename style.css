@@ -1,0 +1,19 @@
+.wrapper {
+    display:flex;
+    flex-direction: column; 
+    width: 20%;
+    border: 5px solid black;
+    margin: 0 auto;
+}
+#nameGame {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+}
+.wrapper.humanState {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; 
+    /* width: 100%; */
+}
