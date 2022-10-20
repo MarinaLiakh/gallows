@@ -1,5 +1,5 @@
 import randomWord from './getrandomword.js';
-import searchLetter from './searchLetter.js';
+import searchLetter from './serchLetter.js';
 import changeImage from './changeImage.js';
 
 const humanState = document.getElementsByClassName('humanState')[0];
