@@ -1,4 +1,6 @@
 import randomWord from './getrandomword.js';
+import searchLetter from './searchLetter.js';
+import changeImage from './changeImage.js';
 
 const humanState = document.getElementsByClassName('humanState')[0];
 const currentWord = document.getElementsByClassName('word')[0];
