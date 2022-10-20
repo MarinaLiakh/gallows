@@ -1,6 +1,6 @@
-import randomWord from './getrandomword.js';
-import searchLetter from './serchLetter.js';
-import changeImage from './changeImage.js';
+import {randomWord} from './getrandomword.js';
+import {searchLetter} from './serchLetter.js';
+import {changeImage} from './changeImage.js';
 
 const humanState = document.getElementsByClassName('humanState')[0];
 const currentWord = document.getElementsByClassName('word')[0];
@@ -9,6 +9,7 @@ const button = document.getElementsByClassName('button')[0];
 const spanWrapper = document.getElementsByClassName('spanWrapper')[0];
 
 const rndWord = randomWord();
+
 
 const spanArray = new Array();
 
@@ -24,7 +25,7 @@ for (let i = 0; i < rndWord.length; i++) {
 }
 
 
-let humanStateImgNumber = 0;
+let humanStateImgNumber = 1;
 let successCounter = 0;
 
 button.addEventListener('click', () => {
@@ -37,12 +38,10 @@ button.addEventListener('click', () => {
                 if (successCounter === rndWord.length) {
                     alert('Победа');
                 }
-            }
-            else {
+            } else {
                 changeImage(humanState, ++humanStateImgNumber);
-                if (humanStateImgNumber === 3) {
-                alert(`Game Over!, было загадано слово ${rndWord}`);
+                if (humanStateImgNumber === 4) {
+                    document.write(`Game Over!, было загадано слово ${rndWord}`);
                 }
             }
 }   )
-
