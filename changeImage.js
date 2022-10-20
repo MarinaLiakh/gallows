@@ -1,3 +1,6 @@
 export function changeImage (img, imageNumber) {
-    img.src =`img/${imageNumber}.png`;
+    console.log(imageNumber)
+    if (imageNumber <= 4) {
+        img.src =`img/${imageNumber}.png`;
+    }
 }
