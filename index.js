@@ -22,3 +22,27 @@ function createElement() {
 for (let i = 0; i < rndWord.length; i++) {
     spanArray.push(createElement());
 }
+
+
+let humanStateImgNumber = 0;
+let successCounter = 0;
+
+button.addEventListener('click', () => {
+            const indexArray = searchLetter(rndWord, input.value);
+            if (indexArray.length !== 0) {
+                for (let i = 0; i < indexArray.length; i++) {
+                    spanArray[indexArray[i]].innerHTML = input.value;
+                    successCounter++;
+                }
+                if (successCounter === rndWord.length) {
+                    alert('Победа');
+                }
+            }
+            else {
+                changeImage(humanState, ++humanStateImgNumber);
+                if (humanStateImgNumber === 3) {
+                alert(`Game Over!, было загадано слово ${rndWord}`);
+                }
+            }
+}   )
+
