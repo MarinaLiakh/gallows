@@ -1,9 +1,10 @@
 .wrapper {
-    display:flex;
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     width: 20%;
     border: 5px solid black;
     margin: 0 auto;
+    justify-content: space-between;
 }
 #nameGame {
     text-align: center;
@@ -14,6 +15,9 @@
     display: block;
     position: relative;
     margin-left: auto;
-    margin-right: auto; 
-    /* width: 100%; */
+    margin-right: auto;
+}
+
+.spanWrapper {
+    text-align: center;
 }
