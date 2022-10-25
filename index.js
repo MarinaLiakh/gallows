@@ -36,7 +36,7 @@ button.addEventListener('click', () => {
                     successCounter++;
                 }
                 if (successCounter === rndWord.length) {
-                    alert('Победа');
+                    document.write('Победа');
                 }
             } else {
                 changeImage(humanState, ++humanStateImgNumber);
