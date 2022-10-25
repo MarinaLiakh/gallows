@@ -23,3 +23,13 @@
     letter-spacing: 10px;
     padding-bottom: 20px;
 }
+.button {
+    background-color:black;
+    color: white;
+}
+
+.button:hover {
+background-color:rgb(237, 139, 100);
+color:black;
+transition: 0,7s;
+}
